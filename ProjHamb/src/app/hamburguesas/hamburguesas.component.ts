@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hamburguesa } from '../hamburguesa';
 import { HAMBURGUESAS } from '../listado-hamburguesas';
-import { setTheme } from 'ngx-bootstrap/utils';
 
 @Component({
     selector: 'app-hamburguesas',
@@ -16,7 +15,6 @@ import { setTheme } from 'ngx-bootstrap/utils';
   
   
     constructor() {
-      setTheme('bs3');
      }
     ngOnInit() {
     }

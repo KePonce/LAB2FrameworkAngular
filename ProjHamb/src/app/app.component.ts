@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import * as utils from 'ngx-bootstrap/utils';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +8,5 @@ import * as utils from 'ngx-bootstrap/utils';
 export class AppComponent {
   title = 'Menu de Hamburguesas';
   constructor(){
-    utils.setTheme('bs3');
   } 
 }
