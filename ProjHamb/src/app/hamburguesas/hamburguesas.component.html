@@ -1,0 +1,20 @@
+<h2>Las Hamburguesas</h2>
+<ul class="Hamburguesas">
+  <li *ngFor="let hamburguesa of hamburguesas"
+    [class.selected]="hamburguesa === selectedHamburguesa"
+    (click)="onSelect(hamburguesa)">
+    <span class="badge">{{hamburguesa.id}}</span> {{hamburguesa.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedHamburguesa">
+
+  <h2>{{selectedHamburguesa.name}} Details</h2>
+  <div><span>id: </span>{{selectedHamburguesa.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedHamburguesa.name" placeholder="name">
+    </label>
+  </div>
+
+</div>
