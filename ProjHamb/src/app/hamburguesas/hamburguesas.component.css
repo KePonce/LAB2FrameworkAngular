@@ -1,6 +1,7 @@
 /* hamburguesas's private CSS styles */
+
 .selected {
-    background-color: #CFD8DC !important;
+    background-color: rgb(5, 161, 228) !important;
     color: white;
   }
   .hamburguesas {
@@ -9,7 +10,13 @@
     padding: 0;
     width: 15em;
   }
-  .hamburguesas li {
+
+  span{
+    color: rgb(238, 241, 241);
+    background-color: black;
+  }
+
+  li {
     cursor: pointer;
     position: relative;
     left: 0;
@@ -19,20 +26,20 @@
     height: 1.6em;
     border-radius: 4px;
   }
-  .hamburguesas li.selected:hover {
-    background-color: #BBD8DC !important;
+  li.selected:hover {
+    background-color: #607D8B !important;
     color: white;
   }
-  .hamburguesas li:hover {
-    color: #607D8B;
+  li:hover {
+    color: blue;
     background-color: #DDD;
     left: .1em;
   }
-  .hamburguesas .text {
+  text {
     position: relative;
     top: -3px;
   }
-  .hamburguesas .badge {
+  badge {
     display: inline-block;
     font-size: small;
     color: white;
@@ -46,10 +53,3 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
-  
-  
-  /*
-  Copyright 2017-2018 Google Inc. All Rights Reserved.
-  Use of this source code is governed by an MIT-style license that
-  can be found in the LICENSE file at http://angular.io/license
-  */
